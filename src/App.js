@@ -7,7 +7,7 @@ import {
   NavLink
 } from "react-router-dom";
 import Rating from 'pages/Rating/Rating'
-
+import NewGame from 'pages/NewGame/NewGame'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <div className="App__body">
           <Routes>
             <Route exact path="/" element={<Rating/>} />
-            <Route path="/new" element={<div>Новая игра</div>} />
+            <Route path="/new" element={<NewGame/>} />
             <Route path="/games" element={<div>Все игры</div>} />
           </Routes>
         </div>

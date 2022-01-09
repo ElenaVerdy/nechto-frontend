@@ -17,3 +17,56 @@ a
     &:focus
         color: colors.$link
         text-decoration: underline
+
+.button-primary
+    display: inline-block
+    cursor: pointer
+    user-select: none
+    outline: none
+    text-align: center
+    box-sizing: border-box
+    transition-property: opacity,background-color
+    transition-duration: .3s
+    font-weight: 600
+    font-family: Open Sans,sans-serif
+    letter-spacing: .1rem
+    font-size: 14px
+    padding: 0 16px
+    border: none
+    border-radius: 8px
+    line-height: 40px
+    background-color: colors.$primary
+    color: colors.$white
+    width: 100%
+    margin-top: 8px
+
+    &[disabled]
+        background-color: colors.$secondary-light
+        color: colors.$secondary
+        cursor: default
+
+.button-primary-outlined
+    display: inline-block
+    cursor: pointer
+    user-select: none
+    outline: none
+    text-align: center
+    box-sizing: border-box
+    transition-property: opacity,background-color
+    transition-duration: .3s
+    font-weight: 600
+    font-family: Open Sans,sans-serif
+    letter-spacing: .1rem
+    font-size: 14px
+    padding: 0 16px
+    border-radius: 8px
+    background-color: transparent
+    line-height: 38px
+    border: 1px solid colors.$primary
+    width: 100%
+    color: colors.$text-dark
+
+    &[disabled]
+        background-color: colors.$secondary-light
+        color: colors.$secondary
+        cursor: default

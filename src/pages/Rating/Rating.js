@@ -31,7 +31,7 @@ function Rating() {
                     return [
                         <div key={`place_${index}`} className='rating__cell rating__cell--place text-overline'>{index + 1}</div>,
                         <div key={`name_${index}`}  className='rating__cell rating__cell--name text-overline'>{user.name}</div>,
-                        <div key={`rank_${index}`}  className='rating__cell rating__cell--rank text-overline'>{user.rank}</div>
+                        <div key={`rank_${index}`}  className='rating__cell rating__cell--rating text-overline'>{user.rating}</div>
                     ]
                 })}
             </div>
