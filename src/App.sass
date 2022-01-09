@@ -1,0 +1,16 @@
+@use './styles/colors.sass' as colors
+
+.App
+  &-header
+    text-align: center
+    margin: 8px
+
+  &__menu
+    display: flex
+
+  &__menu-item
+    padding: 8px
+
+  & .active
+    color: colors.$white
+    background-color: colors.$primary
