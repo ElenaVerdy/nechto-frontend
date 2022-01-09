@@ -46,14 +46,17 @@ function NewGame() {
         if (isSubmitPending) {
             return
         }
-    
+
         try {
-            // setIsSubmitPending(true)
-    
+            setIsSubmitPending(true)
+
             await api.post('/new-game', results)
-    
-            // navigate('/')
+
+            setIsSubmitPending(false)
+
+            navigate('/')
         } catch (err) {
+            console.error(err)
             setIsSubmitPending(false)
         }
     }

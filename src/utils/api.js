@@ -1,4 +1,5 @@
-const baseUrl = 'http://localhost:8000'
+const isDev = window.location.hostname === 'localhost'
+const baseUrl = isDev ? 'http://localhost:8000/api' : 'https://nechto-rating.herokuapp.com/api'
 
 const api = {
     async fetch (url) {
