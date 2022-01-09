@@ -6,6 +6,7 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
+import Rating from 'pages/Rating/Rating'
 
 
 function App() {
@@ -18,11 +19,13 @@ function App() {
           <NavLink to="/games" className="App__menu-item">Все игры</NavLink>
         </div>
 
-        <Routes>
-          <Route exact path="/" element={<div>Рейтинг</div>} />
-          <Route path="/new" element={<div>Новая игра</div>} />
-          <Route path="/games" element={<div>Все игры</div>} />
-        </Routes>
+        <div className="App__body">
+          <Routes>
+            <Route exact path="/" element={<Rating/>} />
+            <Route path="/new" element={<div>Новая игра</div>} />
+            <Route path="/games" element={<div>Все игры</div>} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
