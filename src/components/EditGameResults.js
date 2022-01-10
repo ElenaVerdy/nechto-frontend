@@ -93,7 +93,7 @@ export default function EditGameResults({
                 className='edit-game-results__button button-primary'
                 disabled={!areResultsValid()}
                 onClick={() => onSubmitResults(results)}
-            >Далее</button>
+            >Сохранить</button>
         </div>
     )
 }
